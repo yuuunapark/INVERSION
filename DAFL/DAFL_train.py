@@ -188,27 +188,27 @@ for epoch in range(opt.n_epochs):
         if i%10 ==0:
             # True - True
             utils.save_image( gen_imgs_copy,
-                             f"{i}_generator.png",
+                             f"{i}_generator_True-True.png",
                              nrow=10,
                              normalize=True,
                              scale_each=True)
         
             # True - False
             utils.save_image( gen_imgs_copy,
-                             f"{i}_generator.png",
+                             f"{i}_generator_True-False.png",
                              nrow=10,
                              normalize=True,
                              scale_each=False)
             # False - True 
             utils.save_image( gen_imgs_copy,
-                             f"{i}_generator.png",
+                             f"{i}_generator_False-True.png",
                              nrow=10,
                              normalize =False,
                              scale_each=True)
         
             # False - False    
             utils.save_image( gen_imgs_copy,
-                             f"{i}_generator.png",
+                             f"{i}_generator_Fasle-Fasle.png",
                              nrow=10,
                              normalize=False,
                              scale_each=False)
